@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_third.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,18 @@ class MainActivity : AppCompatActivity() {
         secondActivityBtn.setOnClickListener {
             val myIntent = Intent(this, SecondActivity::class.java)
             startActivity(myIntent)
+        }
+
+        goToThirdBtn.setOnClickListener {
+            //적혀있는 메세지가 뭔지 받아서 -> 화면 이동시 전달
+
+            //메세지 내용을 변수에 기룍
+            val inputMessage = messageEdt.text.toString()
+
+            //일단 화면이동 코드부터 작성
+            val myIntent = Intent( this, ThirdActivity::class.java)
+            startActivity(myIntent)
+
         }
     }
 }

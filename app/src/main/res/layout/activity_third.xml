@@ -14,4 +14,10 @@
         android:textSize="25sp"
         android:text="메인에서 보낸 메세지"/>
 
+    <Button
+        android:id="@+id/goToThirdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="세번째 화면으로 내용을 전달"/>
+
 </LinearLayout>
