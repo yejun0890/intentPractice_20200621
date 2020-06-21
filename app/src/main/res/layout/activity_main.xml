@@ -5,22 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/firstActivityBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="첫번째 화면으로 이동하기"/>
+        android:text="첫번째 화면으로 이동하기" />
 
     <Button
         android:id="@+id/secondActivityBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="두번째 화면으로 이동하기"/>
+        android:text="두번째 화면으로 이동하기" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전달할 내용을 입력"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="세번째 화면으로 내용을 전달" />
 
 
 </LinearLayout>
